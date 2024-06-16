@@ -1,0 +1,24 @@
+{
+  "name": "Matter2cloud",
+  "version": "1.0.44",
+  "slug": "matter_2_cloud",
+  "description": "Matter2Cloud - the data intelligence hub for Matter",
+  "url": "https://github.com/",
+  "startup": "application",
+  "boot": "auto",
+  "options": {
+    "read_sensor": "weather.forecast_home",
+    "write_sensor": "weather.reversed",
+    "poll_interval": 5
+  },
+  "schema": {
+    "read_sensor": "str",
+    "write_sensor": "str",
+    "poll_interval": "int(1,30)"
+  },
+  "ingress": true,
+  "ingress_port": 3000,
+  "homeassistant_api": true,
+  "hassio_api": true,
+  "arch": ["amd64", "armv7", "armhf", "i386" , "aarch64"]
+}
